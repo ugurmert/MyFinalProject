@@ -20,8 +20,9 @@ namespace DataAccess.Concrete.EntityFramework
         }
 
         //DbSet<> ile class'ı veritabanındaki tabloya bağlama işlemi aşağıdaki şekilde yapıldı.
-        public DbSet<Product> Products { get; set; }
-        public DbSet<Category> Categories { get; set; }
-        public DbSet<Customer> Customers { get; set; }
+        public DbSet<Product> Products { get; set; }        //Product nesnesini Products tablosuna bağla
+        public DbSet<Category> Categories { get; set; }     //Category nesnesini Categories tablosuna bağla
+        public DbSet<Customer> Customers { get; set; }      //Customer nesnesini Customers tablosuna bağla
+        public DbSet<Order> Orders { get; set; }            //Order nesnesini Orders tablosuna bağla
     }
 }
